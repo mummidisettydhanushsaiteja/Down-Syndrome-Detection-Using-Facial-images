@@ -28,8 +28,6 @@ Perfect Teja 👍
 
 ---
 
-# ✅ COMPLETE PROFESSIONAL README.md (COPY ENTIRE)
-
 ```markdown
 # Down Syndrome Detection Using Facial Images
 
