@@ -1,32 +1,4 @@
-# Down Syndrome Detection Using Facial Images
 
-This project focuses on detecting Down syndrome in children using facial images with the help of deep learning and transfer learning techniques.
-
-## 📌 Project Overview
-Down syndrome is a genetic disorder caused by an extra copy of chromosome 21. Early detection can help in providing better medical care and support. This project analyzes facial images and classifies whether the person has Down syndrome or not using machine learning and deep learning models.
-
-## 🚀 Features
-- Facial image-based classification system  
-- Transfer learning using pretrained CNN models (VGG16, MobileNet)  
-- Backend developed using Python  
-- Web-based interface using Flask, HTML, and CSS  
-- Machine learning models stored in `.joblib` format  
-
-## 🧠 Technologies Used
-- Python  
-- TensorFlow / Keras  
-- Scikit-learn  
-- OpenCV  
-- Flask  
-- HTML, CSS  
-- Jupyter Notebook  
-
-## 📂 Project Structure
-Perfect Teja 👍
-👉 **Idhi FULL COPY-PASTE README.md** (motham select chesi GitHub lo paste cheyyachu).
-👉 Zero editing needed.
-
----
 
 ```markdown
 # Down Syndrome Detection Using Facial Images
