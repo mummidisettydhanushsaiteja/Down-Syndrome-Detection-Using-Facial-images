@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <ul>
+        <li><a href="{{url_for('home')}}" class="nav-link scrollto"><i class="bx bx-home"></i> <span>User Home</span></a></li>
+        <li><a href="{{url_for('algorithm')}}" class="nav-link scrollto active"><i class="bx bx-user"></i> <span>Upload</span></a></li>
+        <li><a href="{{url_for('graph')}}" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Graph</span></a></li>
+        <li><a href="{{url_for('index')}}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Logout</span></a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <section id="contact" class="contact">
+        <div class="container">
+            
+            <div class="section-title">
+                <h2>Upload an Image</h2>
+            </div>
+
+            <center>
+                <h2 style="color: green;">{{ prediction }}</h2>
+                <div style="margin-left: 230px;" class="row" data-aos="fade-in">
+                    <div class="col-8 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="{{url_for('algorithm')}}" method="post" enctype="multipart/form-data" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <label for="image">Upload Image</label>
+                                    <input type="file" class="form-control" name="file" id="image" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="algorithm">Select Algorithm</label>
+                                    <select name="algorithm" class="form-control" id="algorithm" required>
+                                        <option value="vnl_net">Logistic Regression</option>
+                                        <option value="mobilenet_svm">Hybrid Model (SVM + Mobilenet)</option>
+                                        <!-- <option value="svm">SVM Model</option>
+                                        <option value="mobilenet">MobileNet Model</option> -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="text-center"><button type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+
+            <!-- Display the results -->
+            {% if prediction %}
+                <div class="row mt-4" data-aos="fade-in">
+                    <h4>Uploaded Image:</h4>
+                    <div class="col-12 d-flex justify-content-center align-items-center mt-5 mt-lg-0">
+                        <img src="{{ url_for('static', filename='uploads/' ~ image_name) }}" alt="Uploaded Image" style="max-width: 200px;">
+                    </div>
+                </div>
+            {% endif %}
+
+            </center>
+        </div>
+    </section>
+{% endblock %}

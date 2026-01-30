@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Syndrome in Children</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <header style="background-color:  #001f3f" id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img style="height: 100px; width: 100px;" src="/static/img/a.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="#">DownSyndrome</a></h1>
+        <h1 class="text-light"><a href="#">detection</a></h1>
+        
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        {% block navbar %}
+          <ul>
+            <li><a href="{{url_for('index')}}" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="{{url_for('about')}}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="{{url_for('register')}}" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Register</span></a></li>
+            <li><a href="{{url_for('login')}}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Login</span></a></li>
+          </ul>
+        {% endblock %}
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {% block content %}
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+          <h1>A Deep Learning Approach For</h1>
+          <p><span class="typed" data-typed-items="Novel Transfer Learning Based Deep Features for Diagnosis of Down Syndrome in Children Using Facial Images"></span></p>
+        </div>
+      </section>
+    {% endblock %}
+  </main>
+
+  {% if message %}
+    <script>
+      alert("{{ message }}")        
+    </script>
+  {% endif %}
+
+  <script src="/static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/vendor/aos/aos.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/vendor/typed.js/typed.umd.js"></script>
+  <script src="/static/vendor/waypoints/noframework.waypoints.js"></script>
+  <!-- <script src="/static/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

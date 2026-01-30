@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <ul>
+        <li><a href="{{url_for('index')}}" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="{{url_for('algorithm')}}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Upload</span></a></li>
+        <!-- <li><a href="{{url_for('prediction')}}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Prediction</span></a></li> -->
+        <li><a href="{{url_for('graph')}}" class="nav-link scrollto active"><i class="bx bx-file-blank"></i> <span>Graph</span></a></li>
+        <li><a href="{{url_for('index')}}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Logout</span></a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Graphs</h2>
+            </div>
+
+            <center>
+                <div class="row">
+                    <div data-aos="fade-right">
+                        <img src="/static/graphs/graph1.png">
+                    </div>
+                </div><br><br><br><br>
+                
+                <div class="row">
+                    <div data-aos="fade-right">
+                        <img src="/static/graphs/graph2.png" >
+                    </div>
+                </div><br><br><br><br>
+        
+                <div class="row">
+                    <div data-aos="fade-right">
+                        <img src="/static/graphs/graph3.png" >
+                    </div>
+                </div>
+
+
+            </center>
+
+        </div>
+    </section>
+{% endblock %}

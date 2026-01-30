@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <ul>
+    <li><a href="{{url_for('index')}}" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+    <li><a href="{{url_for('about')}}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+    <li><a href="{{url_for('register')}}" class="nav-link scrollto active"><i class="bx bx-file-blank"></i> <span>Register</span></a></li>
+    <li><a href="{{url_for('login')}}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Login</span></a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <section id="contact" class="contact">
+        <div class="container">
+            
+            <div class="section-title">
+                <h2>Registration</h2>
+            </div>
+
+            <center>
+                <div style="margin-left: 230px;" class="row" data-aos="fade-in">
+                    <div class="col-8 mt-5 mt-lg-0 d-flex align-items-stretch">
+                        <form action="{{url_for('register')}}" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <!-- <label for="name">User Name</label> -->
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="User Name" required>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <!-- <label for="name">Email ID</label> -->
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email ID" required>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <!-- <label for="name">Password</label> -->
+                                    <input type="password" class="form-control" name="password" id="email" placeholder="Password" required>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <!-- <label for="name">Conform Password</label> -->
+                                    <input type="password" class="form-control" name="c_password" id="email" placeholder="Confirm Password" required>
+                                </div>
+                            </div>
+
+                            <div class="text-center"><button type="submit">Register</button></div>
+                        </form>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+{% endblock %}

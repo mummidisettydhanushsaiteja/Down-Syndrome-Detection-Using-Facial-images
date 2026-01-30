@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <ul>
+        <li><a href="{{url_for('home')}}" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>User Home</span></a></li>
+        <li><a href="{{url_for('algorithm')}}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Upload</span></a></li>
+        <!-- <li><a href="{{url_for('prediction')}}" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Prediction</span></a></li> -->
+        <li><a href="{{url_for('graph')}}" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Graph</span></a></li>
+        <li><a href="{{url_for('index')}}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Logout</span></a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+            <h1>Detection of DownSyndrome in Children using Facial Images</h1>
+            <p><span class="typed" data-typed-items=""></span></p>
+        </div>
+    </section>
+{% endblock %}
