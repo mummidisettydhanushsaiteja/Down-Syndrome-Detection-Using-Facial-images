@@ -1,21 +1,18 @@
+# 🧬 Down Syndrome Detection Using Facial Images
 
+This project aims to detect Down syndrome in children using facial images with deep learning and transfer learning techniques.
 
-```markdown
-# Down Syndrome Detection Using Facial Images
+Project Overview  
+Down syndrome is a genetic disorder caused by an extra copy of chromosome 21. Early detection can help in better treatment and support. This system analyzes facial images and predicts whether a person has Down syndrome or not.
 
-This project focuses on detecting Down syndrome in children using facial images with the help of deep learning and transfer learning techniques.
-
-## 📌 Project Overview
-Down syndrome is a genetic disorder caused by an extra copy of chromosome 21. Early detection can help in providing better medical care and support. This project analyzes facial images and classifies whether the person has Down syndrome or not using machine learning and deep learning models.
-
-## 🚀 Features
+Features  
 - Facial image-based classification system  
-- Transfer learning using pretrained CNN models (VGG16, MobileNet)  
+- Transfer learning using pretrained CNN models like VGG16 and MobileNet  
 - Backend developed using Python  
 - Web-based interface using Flask, HTML, and CSS  
-- Machine learning models stored in `.joblib` format  
+- Machine learning models stored in .joblib format  
 
-## 🧠 Technologies Used
+Technologies Used  
 - Python  
 - TensorFlow / Keras  
 - Scikit-learn  
@@ -24,74 +21,49 @@ Down syndrome is a genetic disorder caused by an extra copy of chromosome 21. Ea
 - HTML, CSS  
 - Jupyter Notebook  
 
-## 📂 Project Structure
-```
+Project Structure  
 
-CODE/
-├── BACKEND/
-├── FRONTEND/
-├── templates/
-├── static/
-├── models/
-├── app.py
-├── requirements.txt
+CODE/  
+BACKEND/  
+FRONTEND/  
+templates/  
+static/  
+models/  
+app.py  
+requirements.txt  
 
-````
+How to Run the Project  
 
-## ⚙️ How to Run the Project
+Clone the repository  
+git clone https://github.com/mummidisettydhanushsaiteja/Down-Syndrome-Detection-Using-Facial-images.git  
+cd Down-Syndrome-Detection-Using-Facial-images  
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/mummidisettydhanushsaiteja/Down-Syndrome-Detection-Using-Facial-images.git
-cd Down-Syndrome-Detection-Using-Facial-images
-````
+Install dependencies  
+pip install -r requirements.txt  
 
-### 2️⃣ Install dependencies
+Run the application  
+python app.py  
 
-```bash
-pip install -r requirements.txt
-```
+Open in browser  
+http://127.0.0.1:5000/  
 
-### 3️⃣ Run the application
+Dataset  
+The dataset is not uploaded due to large file size. Public research datasets can be used for training.
 
-```bash
-python app.py
-```
+Results  
+The model extracts facial features using deep learning and classifies Down syndrome with good accuracy. Performance can be improved using larger datasets and advanced CNN models.
 
-### 4️⃣ Open in browser
+Future Enhancements  
+- Improve accuracy using deep CNN architectures  
+- Mobile application integration  
+- Cloud deployment on AWS, Azure, or GCP  
+- Real-time face detection using webcam  
+- Integration with hospital systems  
 
-```
-http://127.0.0.1:5000/
-```
+Author  
+Mummidisetty Dhanush Sai Teja  
+M.Tech Computer Science Engineering  
+Sri Sathya Sai Institute of Higher Learning  
 
-## 📊 Dataset
-
-The dataset is not uploaded to GitHub due to large file size.
-Public facial image datasets and research datasets can be used for training.
-
-## 📈 Results
-
-The model uses transfer learning to extract facial features and classify Down syndrome with good accuracy. Further improvements can be made by increasing dataset size and using advanced models.
-
-## 🔮 Future Enhancements
-
-* Improve accuracy using deep CNN architectures
-* Mobile application integration
-* Cloud deployment (AWS / Azure / GCP)
-* Real-time face detection using webcam
-* Integration with hospital systems
-
-## 👨‍💻 Author
-
-**Mummidisetty Dhanush Sai Teja**
-M.Tech Computer Science Engineering
-Sri Sathya Sai Institute of Higher Learning
-
-## 📜 License
-
-This project is developed for academic and research purposes.
-
-
-
-👉 Cheppu: **simple student style chalu aa or PhD research-level README kavala?**
-```
+License  
+This project is developed for academic and research purposes only.
