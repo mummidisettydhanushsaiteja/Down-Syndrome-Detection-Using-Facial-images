@@ -4,20 +4,20 @@
 This project aims to detect Down syndrome in children using facial images with the help of deep learning and transfer learning techniques. Early detection can help in better medical support and treatment.
 
 🚀 Features  
-- 🧑‍⚕️ Facial image based classification system  
-- 🧠 Transfer learning using pretrained CNN models like VGG16 and MobileNet  
-- 🐍 Backend developed using Python  
-- 🌐 Web-based interface using Flask, HTML and CSS  
-- 📦 Machine learning models stored in .joblib format  
+- Facial image based classification system  
+- Transfer learning using pretrained CNN models like VGG16 and MobileNet  
+- Backend developed using Python  
+- Web-based interface using Flask, HTML and CSS  
+- Machine learning models stored in .joblib format  
 
 🧰 Technologies Used  
-- 🐍 Python  
-- 🤖 TensorFlow / Keras  
-- 📊 Scikit-learn  
-- 👁️ OpenCV  
-- 🌐 Flask  
-- 🎨 HTML, CSS  
-- 📓 Jupyter Notebook  
+- Python  
+- TensorFlow / Keras  
+- Scikit-learn  
+- OpenCV  
+- Flask  
+- HTML, CSS  
+- Jupyter Notebook  
 
 📂 Project Structure  
 CODE/  
@@ -50,11 +50,11 @@ Dataset is not uploaded due to large file size. Public research datasets can be 
 The model extracts facial features using deep learning and classifies Down syndrome with good accuracy. Accuracy can be improved using more data and advanced models.
 
 🔮 Future Enhancements  
-- 📈 Improve accuracy using deep CNN architectures  
-- 📱 Mobile application integration  
-- ☁️ Cloud deployment (AWS / Azure / GCP)  
-- 🎥 Real-time face detection using webcam  
-- 🏥 Integration with hospital systems  
+- Improve accuracy using deep CNN architectures  
+- Mobile application integration  
+- Cloud deployment (AWS / Azure / GCP)  
+- Real-time face detection using webcam  
+- Integration with hospital systems  
 
 👨‍💻 Author  
 Mummidisetty Dhanush Sai Teja  
